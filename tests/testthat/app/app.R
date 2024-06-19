@@ -4,21 +4,6 @@
 # Run an application that visualizes contact tracing data that can be used to
 # estimate incubation and latency time using the doublIn package.
 
-require(mStats)
-require(tools)
-require(magrittr)
-require(dplyr)
-require(plotly)
-require(xtable)
-require(epicontacts)
-require(visNetwork)
-require(lubridate)
-require(shinythemes)
-require(DT)
-require(shinyWidgets)
-require(shinydashboard)
-require(methods)
-
 # . . . . . Prepare the network . . . . . . . . . . . . . . . . . . . . . . .
 
 prepare_network <- function(dat){

@@ -249,7 +249,7 @@ server <- shinyServer(function(input, output, session) {
 
   if (is.null(input$file1$datapath)) {
     # Hash for testing with testthat
-    readRDS("inst/extdata/df2.RDS")
+    readRDS(system.file('extdata', 'df2.RDS', package='doublIn'))
   } else {
     readRDS(input$file1$datapath)
   }
